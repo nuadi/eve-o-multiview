@@ -1,63 +1,40 @@
-EVE-O-Preview has new maintainer.
+# Overview
 
-New forum thread: https://forums.eveonline.com/t/361804
+This is an unofficial fork of the EVE-O-Preview application. For the official repository and current maintainer, please head over to https://github.com/EveOPlus/eve-o-preview
 
-New repository location: https://github.com/EveOPlus/eve-o-preview
+The purpose of this application is to provide a simple way to keep an eye on several simultaneously-running EVE Online clients and to easily switch between them. While running, it shows a set of live thumbnails for each of the active EVE Online clients. These thumbnails allow fast switching to the corresponding EVE Online client either using mouse or configurable hotkeys.
 
-Farewell Reddit post: https://www.reddit.com/r/Eve/comments/ujzlq5/eveo_preview_new_developer_needed/
-
-**So Long, and Thanks for All the Fish**
-
----
-
-## Overview
-
-The purpose of this application is to provide a simple way to keep an eye on several simultaneously running EVE Online clients and to easily switch between them. While running it shows a set of live thumbnails for each of the active EVE Online clients. These thumbnails allow fast switch to the corresponding EVE Online client either using mouse or configurable hotkeys.
-
-It's essentially a task switcher, it does not relay any keyboard/mouse events and suchlike. The application works with EVE, EVE through Steam, or any combination thereof.
+It's essentially a task switcher. It does not relay any keyboard/mouse events. The application works with EVE, EVE through Steam, or any combination thereof.
 
 The program does NOT (and will NOT ever) do the following things:
 
-* modify EVE Online interface
-* display modified EVE Online interface
+* modify the EVE Online interface
+* display a modified EVE Online interface
 * broadcast any keyboard or mouse events
-* anyhow interact with EVE Online except of bringing its main window to foreground or resizing/minimizing it
+* interact with EVE Online except for bringing a client window to the foreground or resizing/minimizing it
 
-<div style="text-align: center;">
+**Under no condition should you use EVE-O Multiview for any actions that would break the EULA or ToS of EVE Online.**
 
-![EVE Partner](https://github.com/Phrynohyas/eve-o-preview/blob/develop/assets/PartnerBadge.png?raw=true)
+If you find out that some of the features or their combination of EVE-O Multiview might cause actions that can be considered as breaking the EULA or ToS of EVE Online, you should consider them as a bug and immediately notify the Developer via in-game mail.
 
-</div>
-
-<div style="page-break-after: always;"></div>
-
-**Under any conditions you should NOT use EVE-O Preview for any actions that break EULA or ToS of EVE Online.**
-
-If you have find out that some of the features or their combination of EVE-O Preview might cause actions that can be considered as breaking EULA or ToS of EVE Online you should consider them as a bug and immediately notify the Developer ( Phrynohyas Tig-Rah ) via in-game mail.
-
-<div style="page-break-after: always;"></div>
-
-## How To Install & Use
+# How To Install & Use
 
 1. Download and extract the contents of the .zip archive to a location of your choice (ie: Desktop, CCP folder, etc)
-..* **Note**: Please do not install the application into the *Program Files* or *Program files (x86)* folders. These folders in general do not allow applications to write anything there while EVE-O Preview now stores its configuration file next to its executable, thus requiring the write access to the folder it is installed into.
-2. Start up both EVE-O Preview and your EVE Clients (the order does not matter)
-3. Adjust settings as you see fit. Program options are described below
+    * **Note**: Please do not install the application into the *Program Files* or *Program files (x86)* folders. These folders in general do not allow applications to write anything there while EVE-O Multiview now stores its configuration file next to its executable, thus requiring the write access to the folder it is installed into.
+1. Start up both EVE-O Preview and your EVE Clients (the order does not matter)
+1. Set EVE clients Display Mode to **Fixed Window** or **Window Mode**
+1. Adjust settings as you see fit. Program options are described below
 
 Video Guides:
 
 * [Eve online , How To : Eve-O Preview (multiboxing; legal)](https://youtu.be/2r0NMKbogXU)
 
-
 ## System Requirements
 
 * Windows 7, Windows 8/8.1, Windows 10
 * Microsoft .NET Framework 4.6.2+
-* EVE clients Display Mode should be set to **Fixed Window** or **Window Mode**. **Fullscreen** mode is not supported.
 
-<div style="page-break-after: always;"></div>
-
-## EVE Online EULA/ToS
+# EVE Online EULA/ToS
 
 This application is legal under the EULA/ToS:
 
@@ -73,13 +50,11 @@ CCP Grimmi wrote:
 > to bring the respective EVE Client to the front/put the window focus on it, in order to
 > interact with it.
 
-<div style="page-break-after: always;"></div>
+# Application Options
 
-## Application Options
+## Application Options Available Via GUI
 
-### Application Options Available Via GUI
-
-#### **General** Tab
+### **General** Tab
 | Option | Description |
 | --- | --- |
 | Minimize to System Tray | Determines whether the main window form be minimized to windows tray when it is closed |
@@ -90,21 +65,21 @@ CCP Grimmi wrote:
 | Hide previews when EVE client is not active | Determines whether all thumbnails should be visible only when an EVE client is active |
 | Unique layout for each EVE client | Determines whether thumbnails positions are different depending on the EVE client being active |
 
-#### **Thumbnail** Tab
+### **Thumbnail** Tab
 | Option | Description |
 | --- | --- |
 | Opacity | Determines the inactive EVE thumbnails opacity (from almost invisible 20% to 100% solid) |
 | Thumbnail Width | Thumbnails width. Can be set to any value from **100** to **640** points |
 | Thumbnail Height | Thumbnails Height. Can be set to any value from **80** to **400** points |
 
-#### **Zoom** Tab
+### **Zoom** Tab
 | Option | Description |
 | --- | --- |
 | Zoom on hover | Determines whether a thumbnail should be zoomed when the mouse pointer is over it  |
 | Zoom factor | Thumbnail zoom factor. Can be set to any value from **2** to **10** |
 | Zoom anchor | Sets the starting point of the thumbnail zoom |
 
-#### **Overlay** Tab
+### **Overlay** Tab
 | Option | Description |
 | --- | --- |
 | Show overlay | Determines whether a name of the corresponding EVE client should be displayed on the thumbnail |
@@ -112,14 +87,12 @@ CCP Grimmi wrote:
 | Highlight active client | Determines whether the thumbnail of the active EVE client should be highlighted with a bright border |
 | Color | Color used to highlight the active client's thumbnail in case the corresponding option is set |
 
-#### **Active Clients** Tab
+### Active Clients Tab
 | Option | Description |
 | --- | --- |
 | Thumbnails list | List of currently active EVE client thumbnails. Checking an element in this list will hide the corresponding thumbnail. However these checks are not persisted and on the next EVE client or EVE-O Preview run the thumbnail will be visible again |
 
-<div style="page-break-after: always;"></div>
-
-### Mouse Gestures and Actions
+## Mouse Gestures and Actions
 
 Mouse gestures are applied to the thumbnail window currently being hovered over.
 
@@ -132,9 +105,7 @@ Mouse gestures are applied to the thumbnail window currently being hovered over.
 | Adjust thumbnail height | Press both left and right mouse buttons and move the mouse up or down |
 | Adjust thumbnail width | Press both left and right mouse buttons and move the mouse left or right |
 
-<div style="page-break-after: always;"></div>
-
-### Configuration File-Only Options
+## Configuration File-Only Options
 
 Some of the application options are not exposed in the GUI. They can be adjusted directly in the configuration file.
 
@@ -151,9 +122,7 @@ Some of the application options are not exposed in the GUI. They can be adjusted
 | **ThumbnailMaximumSize** | <div style="font-size: small">Maximum thumbnail size that can be set either via GUI or by resizing a thumbnail window. Value is written in the form "width, height"<br />The default value is **"640, 400"**.<br />For example: **"ThumbnailMaximumSize": "640, 400"**</div> |
 | **ThumbnailRefreshPeriod** | <div style="font-size: small">Thumbnail refresh period in milliseconds. This option accepts values between **300** and **1000** only.<br />The default value is **500** milliseconds.<br />For example: **"ThumbnailRefreshPeriod": 500**</div> |
 
-<div style="page-break-after: always;"></div>
-
-### Hotkey Setup
+## Hotkey Setup
 
 It is possible to set a key combinations to immediately jump to certain EVE window. However currently EVE-O Preview doesn't provide any GUI to set the these hotkeys. It should be done via editing the configuration file directly. Don't forget to make a backup copy of the file before editing it.
 
@@ -181,9 +150,7 @@ The following hotkey is described as `modifier+key` where `modifier` can be **Co
 
 **Note:** Do not set hotkeys to use the key combinations already used by EVE. It won't work as "_I set hotkey for my DPS char to F1 and when I'll press F1 it will automatically open the DPS char's window and activate guns_". Key combination will be swallowed by EVE-O Preview and NOT retranslated to EVE window. So it will be only "_it will automatically open the DPS char's window_".
 
-<div style="page-break-after: always;"></div>
-
-### Compatibility Mode
+## Compatibility Mode
 
 This setting allows to enable an alternate thumbnail render. This render doesn't use advanced DWM API to create live previews. Instead it is a screenshot-based render with the following pros and cons:
 * `+`  Should work even in remote desktop environments
@@ -191,50 +158,35 @@ This setting allows to enable an alternate thumbnail render. This render doesn't
 * `-`  Thumbnail images are refreshed at 1 FPS rate
 * `-`  Possible short mouse cursor freezes
 
-<div style="page-break-after: always;"></div>
+# Credits
 
-## Credits
+## Maintained by
 
-### Maintained by
+* nuadi (unofficially)
+
+## Created by
+
+* StinkRay
+
+## Previous maintainers
 
 * Phrynohyas Tig-Rah
-
-
-### Created by
-
-* StinkRay
-
-
-
-### Previous maintainers
- 
+* List other maintainer here
 * Makari Aeron
-
 * StinkRay
 
-
-### With contributions from
+## With contributions from
 
 * CCP FoxFour
 
+## Forum thread
 
-### Forum thread
+[Coming Soon (TM)]
 
-https://forums.eveonline.com/t/4202
+## Original repository
 
+https://github.com/Phrynohyas/eve-o-preview
 
-### Original repository
+# CCP Copyright Notice
 
-https://bitbucket.org/ulph/eve-o-preview-git
-
-<div style="page-break-after: always;"></div>
-
-## CCP Copyright Notice
-
-EVE Online, the EVE logo, EVE and all associated logos and designs are the intellectual property of CCP hf. All artwork, screenshots, characters, vehicles, storylines, world facts or other recognizable features of the intellectual property relating to these trademarks are likewise the intellectual property of CCP hf. EVE Online and the EVE logo are the registered trademarks of CCP hf. All rights are reserved worldwide. All other trademarks are the property of their respective owners. CCP hf. has granted permission to pyfa to use EVE Online and all associated logos and designs for promotional and information purposes on its website but does not endorse, and is not in any way affiliated with, pyfa. CCP is in no way responsible for the content on or functioning of this program, nor can it be liable for any damage arising from the use of this program. 
-
-## Additional information for users from Russia and Belarus
-
-* Russia has [illegally annexed Crimea in 2014](https://en.wikipedia.org/wiki/Annexation_of_Crimea_by_the_Russian_Federation) and [brought the war in Donbas](https://en.wikipedia.org/wiki/War_in_Donbas) followed by [full-scale invasion of Ukraine in 2022](https://en.wikipedia.org/wiki/2022_Russian_invasion_of_Ukraine).
-* Russia has brought sorrow and devastations to millions of Ukrainians, killed hundreds of innocent people, damaged thousands of buildings, and forced several million people to flee.
-* [Putin khuylo!](https://en.wikipedia.org/wiki/Putin_khuylo!)
+EVE Online, the EVE logo, EVE and all associated logos and designs are the intellectual property of CCP hf. All artwork, screenshots, characters, vehicles, storylines, world facts or other recognizable features of the intellectual property relating to these trademarks are likewise the intellectual property of CCP hf. EVE Online and the EVE logo are the registered trademarks of CCP hf. All rights are reserved worldwide. All other trademarks are the property of their respective owners. CCP hf. has granted permission to pyfa to use EVE Online and all associated logos and designs for promotional and information purposes on its website but does not endorse, and is not in any way affiliated with, pyfa. CCP is in no way responsible for the content on or functioning of this program, nor can it be liable for any damage arising from the use of this program.
