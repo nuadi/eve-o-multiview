@@ -8,7 +8,7 @@ namespace EveOPreview.Services.Implementation
 	{
 		#region Private constants
 		private const string DEFAULT_PROCESS_NAME = "ExeFile";
-		private const string CURRENT_PROCESS_NAME = "EVE-O Preview";
+		private const string CURRENT_PROCESS_NAME = "EVE-O Multiview";
 		#endregion
 
 		#region Private fields
@@ -19,7 +19,7 @@ namespace EveOPreview.Services.Implementation
 		public ProcessMonitor()
 		{
 			this._processCache = new Dictionary<IntPtr, string>(512);
-			
+
 			// This field cannot be initialized properly in constructor
 			// At the moment this code is executed the main application window is not yet initialized
 			this._currentProcessInfo = new ProcessInfo(IntPtr.Zero, "");

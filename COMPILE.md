@@ -14,7 +14,7 @@ Chose the `.NET desktop development` option when you install it.
 
 # Run
 
-Open the `EVE-O Preview.sln` file in Visual Studio, and then click Run at the top. It should build and execute.
+Open the `EVE-O Multiview.sln` file in Visual Studio, and then click Run at the top. It should build and execute.
 
 # Test
 

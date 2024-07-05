@@ -21,7 +21,7 @@ If you find out that some of the features or their combination of EVE-O Multivie
 
 1. Download and extract the contents of the .zip archive to a location of your choice (ie: Desktop, CCP folder, etc)
     * **Note**: Please do not install the application into the *Program Files* or *Program files (x86)* folders. These folders in general do not allow applications to write anything there while EVE-O Multiview now stores its configuration file next to its executable, thus requiring the write access to the folder it is installed into.
-1. Start up both EVE-O Preview and your EVE Clients (the order does not matter)
+1. Start up both EVE-O Multiview and your EVE Clients (the order does not matter)
 1. Set EVE clients Display Mode to **Fixed Window** or **Window Mode**
 1. Adjust settings as you see fit. Program options are described below
 
@@ -90,7 +90,7 @@ CCP Grimmi wrote:
 ### Active Clients Tab
 | Option | Description |
 | --- | --- |
-| Thumbnails list | List of currently active EVE client thumbnails. Checking an element in this list will hide the corresponding thumbnail. However these checks are not persisted and on the next EVE client or EVE-O Preview run the thumbnail will be visible again |
+| Thumbnails list | List of currently active EVE client thumbnails. Checking an element in this list will hide the corresponding thumbnail. However these checks are not persisted and on the next EVE client or EVE-O Multiview run the thumbnail will be visible again |
 
 ## Mouse Gestures and Actions
 
@@ -109,7 +109,7 @@ Mouse gestures are applied to the thumbnail window currently being hovered over.
 
 Some of the application options are not exposed in the GUI. They can be adjusted directly in the configuration file.
 
-**Note:** Do any changes to the configuration file only while the EVE-O Preview itself is closed. Otherwise the changes you made might be lost.
+**Note:** Do any changes to the configuration file only while the EVE-O Multiview itself is closed. Otherwise the changes you made might be lost.
 
 | Option | Description |
 | --- | --- |
@@ -124,7 +124,7 @@ Some of the application options are not exposed in the GUI. They can be adjusted
 
 ## Hotkey Setup
 
-It is possible to set a key combinations to immediately jump to certain EVE window. However currently EVE-O Preview doesn't provide any GUI to set the these hotkeys. It should be done via editing the configuration file directly. Don't forget to make a backup copy of the file before editing it.
+It is possible to set a key combinations to immediately jump to certain EVE window. However currently EVE-O Multiview doesn't provide any GUI to set the these hotkeys. It should be done via editing the configuration file directly. Don't forget to make a backup copy of the file before editing it.
 
 **Note**: Don't forget to make a backup copy of the file before editing it.
 
@@ -148,13 +148,13 @@ The following hotkey is described as `modifier+key` where `modifier` can be **Co
       "EVE - Ondatra Patrouette": "Control+Shift+F4"
     }
 
-**Note:** Do not set hotkeys to use the key combinations already used by EVE. It won't work as "_I set hotkey for my DPS char to F1 and when I'll press F1 it will automatically open the DPS char's window and activate guns_". Key combination will be swallowed by EVE-O Preview and NOT retranslated to EVE window. So it will be only "_it will automatically open the DPS char's window_".
+**Note:** Do not set hotkeys to use the key combinations already used by EVE. It won't work as "_I set hotkey for my DPS char to F1 and when I'll press F1 it will automatically open the DPS char's window and activate guns_". Key combination will be swallowed by EVE-O Multiview and NOT retranslated to EVE window. So it will be only "_it will automatically open the DPS char's window_".
 
 ## Compatibility Mode
 
 This setting allows to enable an alternate thumbnail render. This render doesn't use advanced DWM API to create live previews. Instead it is a screenshot-based render with the following pros and cons:
 * `+`  Should work even in remote desktop environments
-* `-`  Consumes significantly more memory. In the testing environment EVE-O Preview did consume around 180 MB to manage 3 thumbnails using this render. At the same time the primary render did consume around 50 MB when run in the same environment.
+* `-`  Consumes significantly more memory. In the testing environment EVE-O Multiview did consume around 180 MB to manage 3 thumbnails using this render. At the same time the primary render did consume around 50 MB when run in the same environment.
 * `-`  Thumbnail images are refreshed at 1 FPS rate
 * `-`  Possible short mouse cursor freezes
 
@@ -163,6 +163,7 @@ This setting allows to enable an alternate thumbnail render. This render doesn't
 ## Maintained by
 
 * nuadi (unofficially)
+* Aura Asuna (officially)
 
 ## Created by
 
@@ -171,7 +172,6 @@ This setting allows to enable an alternate thumbnail render. This render doesn't
 ## Previous maintainers
 
 * Phrynohyas Tig-Rah
-* List other maintainer here
 * Makari Aeron
 * StinkRay
 

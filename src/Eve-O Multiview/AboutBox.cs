@@ -21,10 +21,10 @@ namespace PreviewToy
             this.labelCompanyName.Text = AssemblyCompany;
             this.richTextBoxDescription.Rtf =
 @"{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset2 Symbol;}}
-{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
-\pard\sa200\sl276\slmult1\qc\b\fs28\lang9 EVE-O Preview\par
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1
+\pard\sa200\sl276\slmult1\qc\b\fs28\lang9 EVE-O Multiview\par
 
-\pard\sa200\sl276\slmult1\b0\fs24 EVE-O Preview is a multi-client management tool which displays miniature windows, or previews, of your client(s) and allows you to switch between them easily. Due to the nature of the window tracking (Windows DLLs), Linux and Mac are not supported.\par
+\pard\sa200\sl276\slmult1\b0\fs24 EVE-O Multiview is a multi-client management tool which displays miniature windows, or previews, of your client(s) and allows you to switch between them easily. Due to the nature of the window tracking (Windows DLLs), Linux and Mac are not supported.\par
 \i Requirements:\line\i0 Windows Vista/7/8/8.1\line Windows Aero\par
 \i Key Features:\par
 
@@ -42,7 +42,7 @@ namespace PreviewToy
 
         //StinkRay
         private void labelCopyright_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {       
+        {
             string url = "https://forums.eveonline.com/default.aspx?g=posts&t=246157";
             ProcessStartInfo sInfo = new ProcessStartInfo(new Uri(url).AbsoluteUri);
             Process.Start(sInfo);

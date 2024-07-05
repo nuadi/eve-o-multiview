@@ -2,7 +2,7 @@
 {
 	static class Configuration
 	{
-		public const string SolutionName = @"./src/EVE-O-Preview.sln";
+		public const string SolutionName = @"./src/EVE-O Multiview.sln";
 
 		public const string BinFolder = @"./bin";
 		public const string ToolsFolder = @"./tools";
